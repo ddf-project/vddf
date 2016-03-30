@@ -1,0 +1,7 @@
+{
+  "path": {
+    "src": "/src/",
+    "build": "/build/",
+    "assetBuild": "/assets/build/"
+  }
+}

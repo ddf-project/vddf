@@ -1,0 +1,19 @@
+.vddf-chart {
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.vddf-chart * {
+    box-sizing: border-box;
+}
+
+.react-grid-Container, .react-grid-Container * {
+    box-sizing: border-box;
+}
+
+.vddf-tip {
+    padding: 8px 12px !important;
+}
+
+.vddf-chart svg .bar {
+    animation-duration: 0ms;
+}

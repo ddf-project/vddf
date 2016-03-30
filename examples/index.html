@@ -1,0 +1,21 @@
+<html> 
+  <head>
+    <link rel="stylesheet" type="text/css" href="../build/adaviz.min.css" />
+    <script type="text/javascript" src="../build/adaviz.min.js"></script>
+    <script type="text/javascript" src="../build/vddf.js"></script>
+  </head>
+  <body>
+    <div id="my_first_vddf" data-width=800 data-height=600 data-active=1></div>
+    <script type="text/javascript">
+      vDDF.manager.load({
+        data: [
+          {year: 2011, revenue: 100},
+          {year: 2012, revenue: 125},
+          {year: 2013, revenue: 175}
+        ]
+      }).then(function(vddf) {
+        vddf.render(document.getElementById('my_first_vddf'));
+      });
+    </script>
+  </body>
+</html>
