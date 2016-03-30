@@ -1,6 +1,6 @@
 {
   "name": "visual-ddf",
-  "version": "0.0.0-prototype",
+  "version": "0.5",
   "description": "",
   "main": "./lib",
   "scripts": {

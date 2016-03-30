@@ -33,7 +33,6 @@ export default class ReactRenderer {
         width = el.offsetWidth;
       }
 
-      // TODO: support full screen
       if (!height) {
         height = width * 3/4;
       }
