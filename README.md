@@ -4,7 +4,7 @@ When talking about Data Visualizations, most people think of charts, graphs and 
 Visual DDF (vDDF) is a framework that considers visualizations as first-class objects that also act as data sources and sinks.
 This enables powerful collaboration where thousands of users can build on the work of one another through the sharing of visualization objects.
 
-This repository includes the vDDF core and vDDF react. We are publishing data extractor extension and server soon. Feel free to report issues or send pull request!
+This repository includes the vDDF core and vDDF react. **We are publishing data extractor extension and server soon**. Feel free to report issues or send pull request!
 
 ### How to build vDDF ###
 
