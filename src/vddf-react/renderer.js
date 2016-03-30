@@ -62,6 +62,6 @@ export default class ReactRenderer {
   }
 
   getComponent(vddf, props) {
-    return <Chart vddf={vddf} baseUrl={vddf.config.baseUrl} {...props} />;
+    return <Chart vddf={vddf} baseUrl={vddf.config.baseUrl || './assets'} {...props} />;
   }
 }

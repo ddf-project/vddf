@@ -7,7 +7,7 @@ if [ "$1" = "--dev" ]; then
 fi
 
 # Use the bundle adaviz for now, we will also publish adaviz soon!
-if [ ! -f "./build/adaviz.js" ]; then
+if [ ! -f "./build/adaviz.min.js" ]; then
 	(
     mkdir -p build
 		cd build

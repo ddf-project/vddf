@@ -286,17 +286,13 @@ export default class Chart extends React.Component {
     // TODO: cache menus
     const menus = [
       // {title: 'Edit title ...', action: () => this.toggleModal('title')},
-      {title: 'Send to My Arimo', action: this.shareToExtension}
+      // {title: 'Send to My Arimo', action: this.shareToExtension}
     ];
 
-    // if (this.vddf.isModified) {
-    //   menus.push({title: 'Export ...', action: this.exportChart});
-    // } else {
-    //   menus.push({title: 'Embed ...', action: this.embedChart});
-    // }
-
-    menus.push({title: 'Embed ...', action: this.exportChart});
-
+    // without the client, embed won't work
+    if (this.vddf.manager.client) {
+      menus.push({title: 'Embed ...', action: this.exportChart});
+    }
 
     // TODO: google spreadsheet ?
     const toolbarButtons = [
@@ -335,13 +331,13 @@ export default class Chart extends React.Component {
       );
     });
 
-    const menu = (
+    const menu = menuElements.length ? (
       <span style={{display: 'inline-block', marginLeft: 12}}>
         <DropdownMenu iconStyle={style.menuIcon} icon='mdi-share-variant'>
           {menuElements}
         </DropdownMenu>
       </span>
-    );
+    ) : null;
 
     if (!active) {
       return (
